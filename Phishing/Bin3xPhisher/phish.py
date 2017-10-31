@@ -175,7 +175,6 @@ class phishMail:
         else:
             m1['From'] = self.fromAddress
         m1['To'] = self.toAddress
-        m1['To'] = "jason.goss@me.com" 
         m1['Subject'] = self.subject
         m1['X-Mailer'] = "Microsoft Outlook 16.0"
         m1['Message-ID'] = utils.make_msgid().split('@')[0] + self.FQDN

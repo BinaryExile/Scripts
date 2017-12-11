@@ -1,0 +1,4 @@
+fp = open("payloads.dat","wb")
+def handler(packet):
+	fp.write(str(packet.payload.payload.payload))
+sniff(offline="/root/Downloads/capture3.dump",prn=handler, filter="tcp or udp")

@@ -1,0 +1,404 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]
+"fAllowToGetHelp"=dword:00000001
+"FirstCountMsgQPeeksSleepBadApp"=dword:0000000f
+"Modems With Bad DSR"=hex(7):4d,00,75,00,6c,00,74,00,69,00,54,00,65,00,63,00,\
+  68,00,20,00,4d,00,75,00,6c,00,74,00,69,00,4d,00,6f,00,64,00,65,00,6d,00,20,\
+  00,4d,00,54,00,32,00,38,00,33,00,34,00,00,00,4d,00,75,00,6c,00,74,00,69,00,\
+  54,00,65,00,63,00,68,00,20,00,4d,00,75,00,6c,00,74,00,69,00,4d,00,6f,00,64,\
+  00,65,00,6d,00,20,00,4d,00,54,00,32,00,38,00,33,00,34,00,5a,00,44,00,58,00,\
+  00,00,4d,00,75,00,6c,00,74,00,69,00,54,00,65,00,63,00,68,00,20,00,4d,00,54,\
+  00,32,00,38,00,33,00,34,00,00,00,4d,00,75,00,6c,00,74,00,69,00,54,00,65,00,\
+  63,00,68,00,20,00,4d,00,54,00,32,00,38,00,33,00,34,00,5a,00,44,00,58,00,00,\
+  00,4d,00,75,00,6c,00,74,00,69,00,54,00,65,00,63,00,68,00,20,00,32,00,38,00,\
+  33,00,34,00,00,00,4d,00,75,00,6c,00,74,00,69,00,54,00,65,00,63,00,68,00,20,\
+  00,32,00,38,00,33,00,34,00,5a,00,44,00,58,00,00,00,00,00
+"MsgQBadAppSleepTimeInMillisec"=dword:00000001
+"NthCountMsgQPeeksSleepBadApp"=dword:00000005
+"fWritableTSCCPermTab"=dword:00000000
+"DeleteTempDirsOnExit"=dword:00000000
+"PerSessionTempDir"=dword:00000000
+"fDenyTSConnections"=dword:00000000
+"ProductVersion"="5.1"
+"TSAdvertise"=dword:00000000
+"IdleWinStationPoolCount"=dword:00000000
+"TSAppCompat"=dword:00000000
+"TSEnabled"=dword:00000001
+"TSUserEnabled"=dword:00000000
+"fEnableSalem"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\AddIns]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\AddIns\Clip Redirector]
+"Name"="RDPClip"
+"Type"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\AddIns\Sound Redirector]
+"Name"="RDPSound"
+"Type"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\AddIns\Terminal Server Redirector]
+"Name"="\\Device\\RdpDr"
+"Type"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\AuthorizedApplications]
+@=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration]
+"Callback"=dword:00000000
+"CallbackNumber"=""
+"Domain"=""
+"InitialProgram"=""
+"KeyboardLayout"=dword:00000000
+"MaxConnectionTime"=dword:00000000
+"MaxDisconnectionTime"=dword:00000000
+"MaxIdleTime"=dword:00000000
+"NWLogonServer"=""
+"Password"=""
+"Shadow"=dword:00000001
+"UserName"=""
+"WorkDirectory"=""
+"fInheritAutoLogon"=dword:00000001
+"fInheritCallback"=dword:00000000
+"fInheritCallbackNumber"=dword:00000000
+"fInheritInitialProgram"=dword:00000001
+"fInheritMaxDisconnectionTime"=dword:00000000
+"fInheritMaxIdleTime"=dword:00000000
+"fInheritMaxSessionTime"=dword:00000000
+"fInheritReconnectSame"=dword:00000000
+"fInheritResetBroken"=dword:00000000
+"fInheritShadow"=dword:00000000
+"fLogonDisabled"=dword:00000000
+"fPromptForPassword"=dword:00000000
+"fReconnectSame"=dword:00000000
+"fResetBroken"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Dos]
+"KbdIdleBusymsAllowed"=dword:0000003c
+"KbdIdleDetectAbsolute"=dword:00000001
+"KbdIdleDetectProbationCount"=dword:00000050
+"KbdIdleInProbationCount"=dword:00000023
+"KbdIdlemsAllowed"=dword:00000000
+"KbdIdlemsGoodProbationEnd"=dword:000009c4
+"KbdIdlemsProbationTrial"=dword:000009c4
+"KbdIdlemsSleep"=dword:00000064
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\InputDevices]
+@=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\KeyboardType Mapping]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\KeyboardType Mapping\JPN]
+"00000000"="kbd101.dll"
+"00000001"="kbdax2.dll"
+"00000002"="kbd106.dll"
+"00000003"="kbdibm02.dll"
+"00010D01"="kbdnec95.dll"
+"000000000017"="kbdlk41a.dll"
+"000000020015"="kbdnecAT.dll"
+"000000020017"="kbdlk41j.dll"
+"00000D01"="kbdnecNT.dll"
+"00000D04"="kbdnecNT.dll"
+"00010002"="kbd106n.dll"
+"00010D04"="kbdnec95.dll"
+"00020002"="f3ahvoas.dll"
+"00020D01"="kbdnecAT.dll"
+"00020D04"="kbdnecAT.dll"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\KeyboardType Mapping\KOR]
+"00000003"="kbd101a.dll"
+"00000004"="kbd101b.dll"
+"00000005"="kbd101c.dll"
+"00000006"="kbd103.dll"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Licensing Core]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\SysProcs]
+"csrss.exe"=dword:00000000
+"smss.exe"=dword:00000000
+"screg.exe"=dword:00000000
+"lsass.exe"=dword:00000000
+"spoolss.exe"=dword:00000000
+"EventLog.exe"=dword:00000000
+"netdde.exe"=dword:00000000
+"clipsrv.exe"=dword:00000000
+"lmsvcs.exe"=dword:00000000
+"MsgSvc.exe"=dword:00000000
+"winlogon.exe"=dword:00000000
+"NETSTRS.EXE"=dword:00000000
+"nddeagnt.exe"=dword:00000000
+"os2srv.exe"=dword:00000000
+"wfshell.exe"=dword:00000000
+"win.com"=dword:00000000
+"rdpclip.exe"=dword:00000000
+"conime.exe"=dword:00000000
+"proquota.exe"=dword:00000000
+"imepadsv.exe"=dword:00000000
+"ctfmon.exe"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Utilities]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Utilities\change]
+"logon"=hex(7):30,00,00,00,31,00,00,00,4c,00,4f,00,47,00,4f,00,4e,00,00,00,63,\
+  00,68,00,67,00,6c,00,6f,00,67,00,6f,00,6e,00,2e,00,65,00,78,00,65,00,00,00,\
+  00,00
+"port"=hex(7):30,00,00,00,31,00,00,00,50,00,4f,00,52,00,54,00,00,00,63,00,68,\
+  00,67,00,70,00,6f,00,72,00,74,00,2e,00,65,00,78,00,65,00,00,00,00,00
+"user"=hex(7):30,00,00,00,31,00,00,00,55,00,53,00,45,00,52,00,00,00,63,00,68,\
+  00,67,00,75,00,73,00,72,00,2e,00,65,00,78,00,65,00,00,00,00,00
+"winsta"=hex(7):31,00,00,00,31,00,00,00,57,00,49,00,4e,00,53,00,54,00,41,00,00,\
+  00,63,00,68,00,67,00,6c,00,6f,00,67,00,6f,00,6e,00,2e,00,65,00,78,00,65,00,\
+  00,00,00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Utilities\query]
+"appserver"=hex(7):30,00,00,00,32,00,00,00,54,00,45,00,52,00,4d,00,53,00,45,00,\
+  52,00,56,00,45,00,52,00,00,00,71,00,61,00,70,00,70,00,73,00,72,00,76,00,2e,\
+  00,65,00,78,00,65,00,00,00,00,00
+"process"=hex(7):30,00,00,00,31,00,00,00,50,00,52,00,4f,00,43,00,45,00,53,00,\
+  53,00,00,00,71,00,70,00,72,00,6f,00,63,00,65,00,73,00,73,00,2e,00,65,00,78,\
+  00,65,00,00,00,00,00
+"session"=hex(7):30,00,00,00,31,00,00,00,53,00,45,00,53,00,53,00,49,00,4f,00,\
+  4e,00,00,00,71,00,77,00,69,00,6e,00,73,00,74,00,61,00,2e,00,65,00,78,00,65,\
+  00,00,00,00,00
+"user"=hex(7):30,00,00,00,31,00,00,00,55,00,53,00,45,00,52,00,00,00,71,00,75,\
+  00,73,00,65,00,72,00,2e,00,65,00,78,00,65,00,00,00,00,00
+"winsta"=hex(7):31,00,00,00,31,00,00,00,57,00,49,00,4e,00,53,00,54,00,41,00,00,\
+  00,71,00,77,00,69,00,6e,00,73,00,74,00,61,00,2e,00,65,00,78,00,65,00,00,00,\
+  00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Utilities\reset]
+"session"=hex(7):30,00,00,00,31,00,00,00,53,00,45,00,53,00,53,00,49,00,4f,00,\
+  4e,00,00,00,72,00,77,00,69,00,6e,00,73,00,74,00,61,00,2e,00,65,00,78,00,65,\
+  00,00,00,00,00
+"winsta"=hex(7):31,00,00,00,31,00,00,00,57,00,49,00,4e,00,53,00,54,00,41,00,00,\
+  00,72,00,77,00,69,00,6e,00,73,00,74,00,61,00,2e,00,65,00,78,00,65,00,00,00,\
+  00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\VIDEO]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\VIDEO\disc]
+"VgaCompatible"="\\Device\\Video0"
+"\\Device\\Video0"="\\REGISTRY\\Machine\\System\\CurrentControlSet\\Services\\TSDDD\\Device0"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\VIDEO\rdpdd]
+"VgaCompatible"="\\Device\\Video0"
+"\\Device\\Video0"="\\REGISTRY\\Machine\\System\\CurrentControlSet\\Services\\RDPDD\\Device0"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd]
+"BaudRate"=dword:0000e100
+"ByteSize"=dword:00000008
+"CfgDll"="RDPCFGEX.DLL"
+"ConnectType"=dword:00000001
+"ColorDepth"=dword:00000001
+"DeviceName"=""
+"FlowHardwareRx"=dword:00000001
+"FlowHardwareTx"=dword:00000001
+"FlowType"=dword:00000001
+"InputBufferLength"=dword:00000800
+"MinEncryptionLevel"=dword:00000002
+"Parity"=dword:00000000
+"StartupPrograms"="rdpclip"
+"StopBits"=dword:00000000
+"WdDLL"="rdpwd"
+"WdFlag"=dword:00000036
+"WdName"="Microsoft RDP 5.1"
+"WdPrefix"="RDP"
+"WsxDLL"="rdpwsx"
+"XoffChar"=dword:00000013
+"XonChar"=dword:00000011
+"fAutoClientDrives"=dword:00000001
+"fAutoClientLpts"=dword:00000001
+"fDisableCcm"=dword:00000000
+"fDisableCdm"=dword:00000000
+"fDisableClip"=dword:00000000
+"fDisableCpm"=dword:00000000
+"fDisableEncryption"=dword:00000001
+"fDisableLPT"=dword:00000000
+"fEnableBreakDisconnect"=dword:00000000
+"fEnableDTR"=dword:00000001
+"fEnableDsrSensitivity"=dword:00000000
+"fEnableRTS"=dword:00000001
+"fFlowSoftwareRx"=dword:00000001
+"fFlowSoftwareTx"=dword:00000001
+"fForceClientLptDef"=dword:00000001
+"fInheritAutoClient"=dword:00000001
+"fDisableCam"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Wds\rdpwd\Tds\tcp]
+"InteractiveDelay"=dword:0000000a
+"OutBufCount"=dword:00000006
+"OutBufDelay"=dword:00000064
+"OutBufLength"=dword:00000212
+"PdClass"=dword:00000002
+"PdDLL"="tdtcp"
+"PdFlag"=dword:0000004e
+"PdName"="tcp"
+"PortNumber"=dword:00000d3d
+"ServiceName"="tcpip"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations]
+"DefaultSecurity"=hex:01,00,14,80,ac,00,00,00,b8,00,00,00,00,00,00,00,14,00,00,\
+  00,02,00,98,00,06,00,00,00,00,00,24,00,bf,03,0f,00,01,05,00,00,00,00,00,05,\
+  15,00,00,00,fd,43,46,1e,be,04,3e,32,75,b9,75,54,e8,03,00,00,00,00,18,00,bf,\
+  03,0f,00,01,02,00,00,00,00,00,05,20,00,00,00,20,02,00,00,00,00,14,00,bf,03,\
+  0f,00,01,01,00,00,00,00,00,05,12,00,00,00,00,00,18,00,a1,01,00,00,01,02,00,\
+  00,00,00,00,05,20,00,00,00,2b,02,00,00,00,00,14,00,81,00,00,00,01,01,00,00,\
+  00,00,00,05,13,00,00,00,00,00,14,00,81,00,00,00,01,01,00,00,00,00,00,05,14,\
+  00,00,00,01,01,00,00,00,00,00,05,12,00,00,00,01,01,00,00,00,00,00,05,12,00,\
+  00,00
+"ConsoleSecurity"=hex:01,00,14,80,ac,00,00,00,b8,00,00,00,00,00,00,00,14,00,00,\
+  00,02,00,98,00,06,00,00,00,00,00,24,00,bf,03,0f,00,01,05,00,00,00,00,00,05,\
+  15,00,00,00,fd,43,46,1e,be,04,3e,32,75,b9,75,54,e8,03,00,00,00,00,18,00,bf,\
+  03,0f,00,01,02,00,00,00,00,00,05,20,00,00,00,20,02,00,00,00,00,14,00,bf,03,\
+  0f,00,01,01,00,00,00,00,00,05,12,00,00,00,00,00,18,00,a1,01,00,00,01,02,00,\
+  00,00,00,00,05,20,00,00,00,2b,02,00,00,00,00,14,00,81,00,00,00,01,01,00,00,\
+  00,00,00,05,13,00,00,00,00,00,14,00,81,00,00,00,01,01,00,00,00,00,00,05,14,\
+  00,00,00,01,01,00,00,00,00,00,05,12,00,00,00,01,01,00,00,00,00,00,05,12,00,\
+  00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\Console]
+"MinEncryptionLevel"=dword:00000000
+"Callback"=dword:00000000
+"CallbackNumber"=""
+"Comment"="System Console"
+"Domain"=""
+"InitialProgram"=""
+"InputBufferLength"=dword:00000000
+"KeyboardLayout"=dword:00000000
+"KeyboardName"="\\REGISTRY\\Machine\\System\\CurrentControlSet\\Services\\Kbdclass"
+"MaxConnectionTime"=dword:00000000
+"MaxDisconnectionTime"=dword:00000000
+"MaxIdleTime"=dword:00000000
+"MouseName"="\\REGISTRY\\Machine\\System\\CurrentControlSet\\Services\\Mouclass"
+"OutBufCount"=dword:00000000
+"OutBufDelay"=dword:00000000
+"OutBufLength"=dword:00000000
+"Password"=""
+"PdClass"=dword:00000001
+"PdDll"=""
+"PdFlag"=dword:0000001e
+"PdName"="console"
+"UserName"=""
+"WdDll"="wdcon"
+"WdFlag"=dword:00000024
+"WdName"="Console"
+"WorkDirectory"=""
+"fInheritAutoLogon"=dword:00000000
+"fInheritCallback"=dword:00000000
+"fInheritCallbackNumber"=dword:00000000
+"fInheritInitialProgram"=dword:00000000
+"fInheritMaxDisconnectionTime"=dword:00000000
+"fInheritMaxIdleTime"=dword:00000000
+"fInheritMaxSessionTime"=dword:00000000
+"fInheritReconnectSame"=dword:00000000
+"fInheritResetBroken"=dword:00000000
+"fInheritShadow"=dword:00000000
+"fLogonDisabled"=dword:00000000
+"fPromptForPassword"=dword:00000001
+"fReconnectSame"=dword:00000000
+"fResetBroken"=dword:00000000
+"fUseDefaultGina"=dword:00000000
+"Shadow"=dword:00000001
+"TraceClass"=dword:10000009
+"TraceDebugger"=dword:00000001
+"TraceEnable"=dword:0000000c
+"fEnableWinStation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\Console\RDP]
+"CdClass"=dword:00000000
+"CdDLL"=""
+"CdFlag"=dword:00000000
+"CdName"=""
+"CfgDll"="RDPCFGEX.DLL"
+"InteractiveDelay"=dword:00000032
+"OutBufDelay"=dword:00000064
+"PdClass"=dword:00000002
+"PdDLL"="tdtcp"
+"PdFlag"=dword:0000004e
+"PdName"="tcp"
+"WdDLL"="rdpwd"
+"WdFlag"=dword:00000034
+"WdName"="Microsoft RDP 5.1"
+"WdPrefix"="RDP"
+"WsxDLL"="rdpwsx"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp]
+"CfgDll"="RDPCFGEX.DLL"
+"fEnableWinStation"=dword:00000001
+"MaxInstanceCount"=dword:ffffffff
+"PdName"="tcp"
+"PdClass"=dword:00000002
+"PdDLL"="tdtcp"
+"PdFlag"=dword:0000004e
+"OutBufLength"=dword:00000212
+"OutBufCount"=dword:00000006
+"OutBufDelay"=dword:00000064
+"InteractiveDelay"=dword:00000032
+"PortNumber"=dword:00000d3d
+"KeepAliveTimeout"=dword:00000000
+"LanAdapter"=dword:00000000
+"WdName"="Microsoft RDP 5.1"
+"WdDLL"="rdpwd"
+"WsxDLL"="rdpwsx"
+"WdFlag"=dword:00000036
+"InputBufferLength"=dword:00000800
+"CdClass"=dword:00000000
+"CdName"=""
+"CdDLL"=""
+"CdFlag"=dword:00000000
+"Comment"=""
+"fInheritAutoLogon"=dword:00000001
+"fInheritResetBroken"=dword:00000001
+"fInheritReconnectSame"=dword:00000001
+"fInheritInitialProgram"=dword:00000001
+"fInheritCallback"=dword:00000000
+"fInheritCallbackNumber"=dword:00000001
+"fInheritShadow"=dword:00000001
+"fInheritMaxSessionTime"=dword:00000001
+"fInheritMaxDisconnectionTime"=dword:00000001
+"fInheritMaxIdleTime"=dword:00000001
+"fInheritAutoClient"=dword:00000001
+"fInheritSecurity"=dword:00000000
+"fInheritColorDepth"=dword:00000000
+"fPromptForPassword"=dword:00000000
+"fResetBroken"=dword:00000000
+"fReconnectSame"=dword:00000000
+"fLogonDisabled"=dword:00000000
+"fAutoClientDrives"=dword:00000001
+"fAutoClientLpts"=dword:00000001
+"fForceClientLptDef"=dword:00000001
+"fDisableEncryption"=dword:00000001
+"fHomeDirectoryMapRoot"=dword:00000000
+"fUseDefaultGina"=dword:00000000
+"fDisableCpm"=dword:00000000
+"fDisableCdm"=dword:00000000
+"fDisableCcm"=dword:00000000
+"fDisableLPT"=dword:00000000
+"fDisableClip"=dword:00000000
+"fDisableExe"=dword:00000000
+"fDisableCam"=dword:00000000
+"Username"=""
+"Domain"=""
+"Password"=""
+"WorkDirectory"=""
+"InitialProgram"=""
+"CallbackNumber"=""
+"Callback"=dword:00000000
+"Shadow"=dword:00000001
+"MaxConnectionTime"=dword:00000000
+"MaxDisconnectionTime"=dword:00000000
+"MaxIdleTime"=dword:00000000
+"KeyboardLayout"=dword:00000000
+"MinEncryptionLevel"=dword:00000002
+"NWLogonServer"=""
+"WFProfilePath"=""
+"WdPrefix"="RDP"
+"TraceEnable"=dword:00000000
+"TraceDebugger"=dword:00000000
+"TraceClass"=dword:00000000
+"ColorDepth"=dword:00000003

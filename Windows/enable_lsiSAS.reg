@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE/SYSTEM\CurrentControlSet\Services\LSI_SAS]
+"Group"="SCSI Miniport"
+"ImagePath"=hex(2):73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,64,00,\
+  72,00,69,00,76,00,65,00,72,00,73,00,5c,00,6c,00,73,00,69,00,5f,00,73,00,61,\
+  00,73,00,2e,00,73,00,79,00,73,00,00,00
+"ErrorControl"=dword:00000001
+"Start"=dword:00000000
+"Type"=dword:00000001
+"Tag"=dword:00000040
+
+[HKEY_LOCAL_MACHINE/SYSTEM\CurrentControlSet\Services\LSI_SAS\Parameters]
+"BusType"=dword:0000000a
+
+[HKEY_LOCAL_MACHINE/SYSTEM\CurrentControlSet\Services\LSI_SAS\Parameters\PnpInterface]
+"5"=dword:00000001
+
+[HKEY_LOCAL_MACHINE/SYSTEM\CurrentControlSet\Services\LSI_SAS\Enum]
+"0"="PCI\\VEN_1000&DEV_0054&SUBSYS_197615AD&REV_01\\4&2732702b&0&00A8"
+"Count"=dword:00000001
+"NextInstance"=dword:00000001
+

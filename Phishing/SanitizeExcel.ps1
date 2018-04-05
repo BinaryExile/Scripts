@@ -1,4 +1,4 @@
-$path = "C:\Users\Jason.Goss\Documents\Temp\test" 
+$path = "C:\Users\UserName\Documents\Temp\test" 
 "Remember to put the document in a trusted location: Trust Center -> Trusted Locations" 
 Add-Type -AssemblyName Microsoft.Office.Interop.Excel 
 $xlRemoveDocType = "Microsoft.Office.Interop.Excel.XlRemoveDocInfoType" -as [type] 

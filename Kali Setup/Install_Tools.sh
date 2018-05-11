@@ -24,6 +24,7 @@ mkdir /usr/share/wordlists/SecLists
 git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/SecLists
 echo -e "\n\n[*] Installs Discover \n\n"
 git clone https://github.com/leebaird/discover.git /opt/discover && /opt/discover/update.sh
+ln -s /opt/discover/discover.sh /usr/local/bin/discover.sh
 echo -e "\n\n[*] Installing Pure FTP \n\n"
 apt-get install -y pure-ftpd
 groupadd ftpgroup 
@@ -105,6 +106,7 @@ echo -e "\n\n[*] installing xrdp \n\n"
 mkdir /opt/xrdp/
 cd /opt/xrdp/ 
 wget https://raw.githubusercontent.com/sensepost/xrdp/master/xrdp.py
+ln -s /opt/xrdp/xrdp.py /usr/local/bin/xrdp.py
 echo -e "\n\n[*] installing brutus ftp bruteforcer \n\n"
 mkdir /opt/brutus
 wget https://gist.githubusercontent.com/BushiSecurity/934c2576e7dc6c0885a7f4eb2e1043b5/raw/80557a02addea2aaa9ffff64c0d80d24ceafe37b/brutus.py

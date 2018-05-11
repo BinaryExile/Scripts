@@ -4,9 +4,9 @@ until passwd
 do
   echo "Try again"
 done
-echo -e "\n\n[*] Updating /n/n"
+echo -e "\n\n[*] Updating \n\n"
 apt-get update && apt-get -y upgrade
-echo -e "\n\n[*] Setting up Metasploit Database to Start on Boot /n/n"
+echo -e "\n\n[*] Setting up Metasploit Database to Start on Boot \n\n"
 service postgresql start
 update-rc.d postgresql enable
 msfdb init

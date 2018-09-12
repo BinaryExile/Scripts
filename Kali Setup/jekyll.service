@@ -1,0 +1,19 @@
+[Unit]
+Description=Jekyll service
+After=syslog.target network.target
+
+[Service]
+User=root
+Type=simple
+WorkingDirectory=/root/BinaryExileWiki/BinaryExile.github.io
+ExecStart=/usr/local/bin/bundle exec jekyll serve --watch --source "/root/BinaryExileWiki/BinaryExile.github.io"
+ExecStop=/usr/bin/pkill -f jekyll
+Restart=always
+TimeoutStartSec=60
+RestartSec=60
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=jekyll
+
+[Install]
+WantedBy=multi-user.target network-online.target

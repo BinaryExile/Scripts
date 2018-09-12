@@ -1,4 +1,8 @@
 #!/bin/bash
+echo -e "\n\n[*] Adding Timestamp to terminal and history\n\n"
+export PROMPT_COMMAND="echo -n \[\$(date +%F-%T)\]\ "' >> /root/.bashrc 
+echo 'export HISTTIMEFORMAT="%F-%T "' >> /root/.bashrc 
+echo 'export PS1="\e[032m\D{%F %T}\e[m \n\u \W\\$ \[$(tput sgr0)\]"' >> /root/.bashrc 
 echo -e "\n\n[*] Change Password \n\n"
 until passwd
 do
@@ -6,6 +10,16 @@ do
 done
 echo -e "\n\n[*] Updating \n\n"
 apt-get -y update && apt-get -y upgrade
+echo -e "\n\n[*] Installing offline service for the BinaryExile Wiki at http://127.0.0.1:4000\n\n"
+gem install bundler
+mkdir /root/BinaryExileWiki && cd /root/BinaryExileWiki
+git clone https://github.com/BinaryExile/BinaryExile.github.io
+cd /root/BinaryExileWiki/BinaryExile.github.io
+bundle install
+bundle exec jekyll serve &
+cd /etc/systemd/system/
+wget "https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/jekyll.service"
+cd ~
 echo -e "\n\n[*] Setting up Metasploit Database to Start on Boot \n\n"
 service postgresql start
 update-rc.d postgresql enable

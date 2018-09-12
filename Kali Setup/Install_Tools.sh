@@ -1,6 +1,5 @@
 #!/bin/bash
 echo -e "\n\n[*] Adding Timestamp to terminal and history\n\n"
-export PROMPT_COMMAND="echo -n \[\$(date +%F-%T)\]\ "' >> /root/.bashrc 
 echo 'export HISTTIMEFORMAT="%F-%T "' >> /root/.bashrc 
 echo 'export PS1="\e[032m\D{%F %T}\e[m \n\u \W\\$ \[$(tput sgr0)\]"' >> /root/.bashrc 
 echo -e "\n\n[*] Change Password \n\n"

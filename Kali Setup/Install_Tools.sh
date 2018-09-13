@@ -88,7 +88,7 @@ chmod +x configure
 echo -e "\n\n[*] installing Empire \n\n"
 git clone 'https://github.com/EmpireProject/Empire' 2>> errorlog.txt 1>> log.txt
 cd Empire
-./setup/install.sh 2>> errorlog.txt 1>> log.txt
+./setup/install.sh
 # xwatchwin
 echo -e "\n\n[*] installing xwatchwin \n\n"
 cd /opt

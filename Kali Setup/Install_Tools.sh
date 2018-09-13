@@ -19,7 +19,6 @@ mkdir /root/BinaryExileWiki 2>> errorlog.txt 1>> log.txt && cd /root/BinaryExile
 git clone https://github.com/BinaryExile/BinaryExile.github.io 2> errorlog.txt 1> log.txt
 cd /root/BinaryExileWiki/BinaryExile.github.io
 bundle install 2>> errorlog.txt 1>> log.txt
-bundle exec jekyll serve & 
 cd /etc/systemd/system/
 wget "https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/jekyll.service" 2>> errorlog.txt 
 cd ~
@@ -139,3 +138,6 @@ apt-get --purge -y autoremove 2>> errorlog.txt 1>> log.txt
 apt-get clean 2>> errorlog.txt 1>> log.txt
 echo -e "\n\n[*] Updating Searchsploit [note: it may take a while] \n\n"
 searchsploit --update 2>> errorlog.txt 1>> log.txt
+cd /root/BinaryExileWiki/BinaryExile.github.io
+bundle exec jekyll serve &
+cd ~

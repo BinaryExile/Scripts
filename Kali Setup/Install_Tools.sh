@@ -126,12 +126,6 @@ ln -s /opt/xrdp/xrdp.py /usr/local/bin/xrdp.py
 echo -e "\n\n[*] installing brutus ftp bruteforcer \n\n"
 mkdir /opt/brutus
 wget https://gist.githubusercontent.com/BushiSecurity/934c2576e7dc6c0885a7f4eb2e1043b5/raw/80557a02addea2aaa9ffff64c0d80d24ceafe37b/brutus.py 2>> errorlog.txt
-echo Installing Wappalyzer
-wget https://addons.mozilla.org/firefox/downloads/latest/wappalyzer/addon-10229-latest.xpi && firefox -install-global-extension addon-10229-latest.xpi 2>> errorlog.txt 1>> log.txt && rm *.xpi
-echo Installing foxyproxy
-wget https://addons.mozilla.org/firefox/downloads/latest/foxyproxy-standard/addon-2464-latest.xpi && firefox -install-global-extension addon-2464-latest.xpi 2>> errorlog.txt 1>> log.txt && rm *.xpi
-echo Installing Developer Toolbar
-wget https://addons.mozilla.org/firefox/downloads/latest/web-developer/addon-60-latest.xpi && firefox -install-global-extension addon-60-latest.xpi 2>> errorlog.txt 1>> log.txt && rm *.xpi
 echo [*] updating searchsploit
 echo -e "\n\n[*] cleaning up \n\n"
 apt-get --purge -y autoremove 2>> errorlog.txt 1>> log.txt
@@ -141,4 +135,11 @@ searchsploit --update 2>> errorlog.txt 1>> log.txt
 cd /root/BinaryExileWiki/BinaryExile.github.io
 bundle exec jekyll serve &
 cd ~
-echo "\n\n[*] Remember to install wappalyzer, foxyproxy, and developer tools \n\n[*]"
+wget -L -O firefox.tar.bz2 'https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US'
+echo -e "\n\n[*] Installing Firefox Developer Edition - Launch with firefox-dev \n\n"
+tar xf firefox.tar.bz2
+mv firefox/ /usr/lib/firefox-dev
+ln -s /usr/lib/firefox-dev/firefox /usr/bin/firefox-dev
+wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/Firefox-Dev.Desktop
+mv Firefox-Dev.Desktop /root/.local/share/applications/Firefox-Dev.Desktop
+echo -e "\n\n[*] Install Wappalyzer and foxyproxy since firefox no longer supports command line install \n\n"

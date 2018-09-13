@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open  
+
+[Desktop Entry]
+Version=1.0
+Name=Firefox Developer Edition
+GenericName=Firefox Developer Edition
+Exec=firefox-dev
+Terminal=false
+Icon="/usr/lib/firefox-dev/browser/chrome/icons/default/default128.png"
+Type=Application
+Categories=Browser;Development
+X-Ayatana-Desktop-Shortcuts=NewWindow
+Icon[en_US]=/usr/lib/firefox-dev/browser/chrome/icons/default/default48.png

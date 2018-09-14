@@ -138,7 +138,7 @@ tar xf firefox.tar.bz2
 mv firefox/ /usr/lib/firefox-dev
 ln -s /usr/lib/firefox-dev/firefox /usr/bin/firefox-dev
 wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/Firefox-Dev.Desktop
-mv Firefox-Dev.Desktop /root/.local/share/applications/Firefox-Dev.Desktop
+mv Firefox-Dev.Desktop /usr/share/applications/Firefox-Dev.Desktop
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt --fix-broken install

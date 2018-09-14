@@ -8,7 +8,6 @@ git pull origin master 2>> \root\errorlog.txt 1>> \root\log.txt
 bundle install 2>> \root\errorlog.txt 1>> \root\log.txt
 cd ~
 echo -e "\n\n[*]  Updating Lists of fuzzing parameters, paswords, ect to /usr/share/wordlists/SecLists \n\n"
-mkdir /usr/share/wordlists/SecLists
 cd /usr/share/wordlists/SecLists 
 git pull origin master 2>> \root\errorlog.txt 1>> \root\log.txt
 echo -e "\n\n[*] Updating Discover \n\n"

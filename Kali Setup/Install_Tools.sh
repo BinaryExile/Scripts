@@ -141,6 +141,7 @@ wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/F
 mv Firefox-Dev.Desktop /usr/share/applications/Firefox-Dev.Desktop
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
 sudo apt --fix-broken install
 sudo apt-get install sublime-text
 cd /root/BinaryExileWiki/BinaryExile.github.io

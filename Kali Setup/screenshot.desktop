@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Screenshot
+GenericName=Screenshot
+Comment=Screenshot
+Exec=/usr/local/bin/screen.sh
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true

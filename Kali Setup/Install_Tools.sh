@@ -18,11 +18,10 @@ echo -e "\n\n[*] Updating \n\n"
 apt-get -y update && apt-get -y upgrade
 echo -e “Installing screenshot program to capture screen every 30 seconds”
 sudo apt-get install scrot
-touch /usr/local/bin/screenshot.sh
+touch /usr/local/bin/screen.sh
 chmod 777 /usr/local/bin/screen.sh
 echo “#!/bin/sh” >  /usr/local/bin/screen.sh
-echo “DISPLAY=:0 scrot '/root/logs/screenshots/tecmint-%Y-%m-%d-%H_%M.jpg' -q 20” >> /usr/local/bin/screen.sh
-(crontab -l 2>/dev/null; echo "*/1 * * * * sh /usr/local/bin/screen.sh") | crontab -
+echo “while true; do scrot -d 60 '%Y-%m-%d-%H:%M:%S.png' -q 20 -e 'mv $f /root/logs/screenshots/'; done” >> /usr/local/bin/screen.sh
 echo -e "\n\n[*] Installing offline service for the BinaryExile Wiki at http://127.0.0.1:4000\n\n"
 gem install bundler 2>> /root/errorlog.txt 1>> /root/log.txt
 mkdir /root/BinaryExileWiki 2>> /root/errorlog.txt 1>> /root/log.txt && cd /root/BinaryExileWiki 2>> /root/errorlog.txt 1>> /root/log.txt
@@ -49,10 +48,10 @@ echo -e "\n\n[*]  Lists of fuzzing parameters, paswords, ect to /usr/share/wordl
 mkdir /usr/share/wordlists/SecLists
 git clone https://github.com/danielmiessler/SecLists.git /usr/share/wordlists/SecLists 2>> /root/errorlog.txt 1>> /root/log.txt
 echo -e "\n\n[*] Installs Discover \n\n"
-git clone https://github.com/leebaird/discover.git /opt/discover && /opt/discover/update.sh 2>> /root/errorlog.txt 1>> /root/log.txt
+git clone https://github.com/leebaird/discover.git /opt/discover && /opt/discover/update.sh 
 ln -s /opt/discover/discover.sh /usr/local/bin/discover.sh
 echo -e "\n\n[*] Installing Pure FTP \n\n"
-apt-get install -y pure-ftpd 2>> /root/errorlog.txt 1>> /root/log.txt
+apt-get install -y pure-ftpd
 groupadd ftpgroup 
 useradd -g ftpgroup -d /dev/null -s /etc ftpuser
 pure-pw useradd ftpuser -u ftpuser -d /ftphome
@@ -62,8 +61,8 @@ ln -s ../conf/PureDB 60pdb
 mkdir -p /ftphome 
 chown -R ftpuser:ftpgroup /ftphome/ 
 /etc/init.d/pure-ftpd restart 
-pip uninstall selenium 2>> /root/errorlog.txt 1>> /root/log.txt
-pip install selenium 2>> /root/errorlog.txt 1>> /root/log.txt
+pip uninstall selenium 
+pip install selenium
 echo -e "\n\n[*] installing ftp client \n\n" 
 apt-get install -y ftp 2>> /root/errorlog.txt 1>> /root/log.txt
 echo -e "\n\n[*] installing xdotool \n\n"
@@ -149,6 +148,8 @@ mv firefox/ /usr/lib/firefox-dev
 ln -s /usr/lib/firefox-dev/firefox /usr/bin/firefox-dev
 wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/Firefox-Dev.Desktop
 mv Firefox-Dev.Desktop /usr/share/applications/Firefox-Dev.Desktop
+wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/screenshot.desktop
+mv screenshot.desktop  /root/.config/autostart/startup.desktop
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update

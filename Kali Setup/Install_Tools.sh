@@ -16,12 +16,14 @@ do
 done
 echo -e "\n\n[*] Updating \n\n"
 apt-get -y update && apt-get -y upgrade
-echo -e “Installing screenshot program to capture screen every 30 seconds”
+echo -e “Installing screenshot program to capture screen every 30 seconds and archive every hour”
 sudo apt-get install scrot
 touch /usr/local/bin/screen.sh
 chmod 777 /usr/local/bin/screen.sh
-echo “#!/bin/sh” >  /usr/local/bin/screen.sh
-echo “while true; do scrot -d 60 '%Y-%m-%d-%H:%M:%S.png' -q 20 -e 'mv $f /root/logs/screenshots/'; done” >> /usr/local/bin/screen.sh
+echo "#!/bin/sh" >  /root/archive.sh
+echo "tar -czf /root/logs/screenshots/screenshot_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/screenshots/*.png && rm -rf /root/logs/screenshots/*.png" >> /root/archive.sh
+chmod +x /root/archive.sh
+(crontab -l 2>/dev/null; echo "0 * * * * /root/archive.sh") | crontab -
 echo -e "\n\n[*] Installing offline service for the BinaryExile Wiki at http://127.0.0.1:4000\n\n"
 gem install bundler 2>> /root/errorlog.txt 1>> /root/log.txt
 mkdir /root/BinaryExileWiki 2>> /root/errorlog.txt 1>> /root/log.txt && cd /root/BinaryExileWiki 2>> /root/errorlog.txt 1>> /root/log.txt

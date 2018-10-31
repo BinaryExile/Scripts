@@ -33,6 +33,8 @@ bundle install 2>> /root/errorlog.txt 1>> /root/log.txt
 cd /etc/systemd/system/
 wget "https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/jekyll.service" 2>> /root/errorlog.txt 
 cd ~
+echo -e "\n\n[*] Updating NMAPs Scripts \n\n"
+nmap --script-updatedb
 echo -e "\n\n[*] Setting up Metasploit Database to Start on Boot \n\n"
 service postgresql start 2>> /root/errorlog.txt 1>> /root/log.txt
 update-rc.d postgresql enable 2>> /root/errorlog.txt 1>> /root/log.txt

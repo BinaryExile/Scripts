@@ -17,6 +17,7 @@ done
 echo -e "\n\n[*] Updating \n\n"
 apt-get -y update && apt-get -y upgrade
 echo -e “Installing screenshot program to capture screen every 30 seconds and archive every hour”
+sudo apt-get install openvas
 sudo apt-get install scrot
 touch /usr/local/bin/screen.sh
 chmod 777 /usr/local/bin/screen.sh

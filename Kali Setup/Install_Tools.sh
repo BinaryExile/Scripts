@@ -160,7 +160,7 @@ echo -e "\n\n[*] Installing Firefox Developer Edition - Launch with firefox-dev 
 tar xf firefox.tar.bz2
 mv firefox/ /usr/lib/firefox-dev
 ln -s /usr/lib/firefox-dev/firefox /usr/bin/firefox-dev
-wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/Firefox-Dev.Desktop
+wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/firefox-dev.desktop
 mv Firefox-Dev.Desktop /usr/share/applications/Firefox-Dev.Desktop
 wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/screenshot.desktop
 mv screenshot.desktop  /root/.config/autostart/startup.desktop

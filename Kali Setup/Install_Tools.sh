@@ -42,6 +42,8 @@ git clone https://github.com/scipag/vulscan.git
 cd vulnscan
 mv *.csv ..
 mv *.nse ..
+cd ..
+wget https://www.computec.ch/projekte/vulscan/download/scipvuldb.csv -O scipvuldb.csv 
 cd ~
 echo -e "\n\n[*] Setting up Metasploit Database to Start on Boot \n\n"
 service postgresql start 2>> /root/errorlog.txt 1>> /root/log.txt

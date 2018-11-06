@@ -172,4 +172,4 @@ sudo apt-get install sublime-text
 cd /root/BinaryExileWiki/BinaryExile.github.io
 bundle exec jekyll serve &
 cd ~
-echo -e "\n\n[*] Install Wappalyzer and foxyproxy since firefox no longer supports command line install \n\n"
+echo -e "\n\n[*] Update chromium desktop file with --no-sandbox and Install Wappalyzer, Vulners Scanner, and foxyproxy since firefox no longer supports command line install \n\n"

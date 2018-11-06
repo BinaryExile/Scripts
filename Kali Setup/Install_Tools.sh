@@ -36,6 +36,13 @@ wget "https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/
 cd ~
 echo -e "\n\n[*] Updating NMAPs Scripts \n\n"
 nmap --script-updatedb
+cd /usr/share/nmap/scripts/
+wget https://raw.githubusercontent.com/vulnersCom/nmap-vulners/master/vulners.nse
+git clone https://github.com/scipag/vulscan.git
+cd vulnscan
+mv *.csv ..
+mv *.nse ..
+cd ~
 echo -e "\n\n[*] Setting up Metasploit Database to Start on Boot \n\n"
 service postgresql start 2>> /root/errorlog.txt 1>> /root/log.txt
 update-rc.d postgresql enable 2>> /root/errorlog.txt 1>> /root/log.txt

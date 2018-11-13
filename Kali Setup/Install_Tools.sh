@@ -56,7 +56,9 @@ echo Workstation > /etc/hostname
 sed -i 's/kali/Workstation/g' /etc/hosts
 echo -e "\n\n[*] Turning on Metasploit Logging \n\n"
 cd /root/.msf* 
-echo “spool /root/msf_console.log” > msfconsole.rc
+echo 'spool /root/msf_console.log' > msfconsole.rc
+echo 'use exploit/multi/handler' >> msfconsole.rc
+echo 'set ExitOnSession false' >> msfconsole.rc
 cd ~
 echo -e "\n\n[*]  Lists of fuzzing parameters, paswords, ect to /usr/share/wordlists/SecLists \n\n"
 mkdir /usr/share/wordlists/SecLists

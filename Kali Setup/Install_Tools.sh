@@ -7,7 +7,7 @@ echo 'export HISTTIMEFORMAT="%F-%T "' >> /root/.bashrc
 echo 'export PS1="\e[032m\D{%F %T}\e[m \n\u \W\\$ \[$(tput sgr0)\]"' >> /root/.bashrc 
 echo 'lsof -tac script "$(tty)" || {' >> /root/.bashrc 
 echo -e "\n\n[*] Adding auto script command to bash launch.  Remember to type exit and not close the window\n\n"
-echo '   	script -f script -f /root/logs/script/Script-$(date -d "today" +"%Y%m%d%H%M%S").log' >> /root/.bashrc 
+echo '   	script -f /root/logs/script/Script-$(date -d "today" +"%Y%m%d%H%M%S").log' >> /root/.bashrc 
 echo '}' >>  /root/.bashrc 
 echo -e "\n\n[*] Change Password \n\n"
 until passwd

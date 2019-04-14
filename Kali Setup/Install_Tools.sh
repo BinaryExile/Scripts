@@ -40,7 +40,7 @@ nmap --script-updatedb
 cd /usr/share/nmap/scripts/
 wget https://raw.githubusercontent.com/vulnersCom/nmap-vulners/master/vulners.nse
 git clone https://github.com/scipag/vulscan.git
-cd vulnscan
+cd vulscan
 mv *.csv ..
 mv *.nse ..
 cd ..

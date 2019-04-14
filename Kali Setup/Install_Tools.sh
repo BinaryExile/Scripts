@@ -2,6 +2,7 @@
 mkdir /root/logs
 mkdir /root/logs/script
 mkdir /root/logs/screenshots
+mkdir /root/logs/metasploit
 echo -e "\n\n[*] Adding Timestamp to terminal and history\n\n"
 echo 'export HISTTIMEFORMAT="%F-%T "' >> /root/.bashrc 
 echo 'export PS1="\e[032m\D{%F %T}\e[m \n\u \W\\$ \[$(tput sgr0)\]"' >> /root/.bashrc 
@@ -57,7 +58,7 @@ echo Workstation > /etc/hostname
 sed -i 's/kali/Workstation/g' /etc/hosts
 echo -e "\n\n[*] Turning on Metasploit Logging \n\n"
 cd /root/.msf* 
-echo 'spool /root/msf_console.log' > msfconsole.rc
+echo 'spool /root/logs/metasploit/msf_console.log' > msfconsole.rc
 echo 'use exploit/multi/handler' >> msfconsole.rc
 echo 'set ExitOnSession false' >> msfconsole.rc
 cd ~

@@ -22,11 +22,11 @@ sudo apt-get install openvas
 sudo apt-get install scrot
 touch /usr/local/bin/screen.sh
 chmod 777 /usr/local/bin/screen.sh
-echo '#!/bin/sh' >  /root/archive.sh
-echo 'tar -czf /root/logs/screenshots/screenshot_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/screenshots/*.png && rm -rf /root/logs/screenshots/*.png' >> /root/archive.sh
-echo 'tar -czf /root/logs/script/script_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/script/*.log && rm -rf /root/logs/script/*.log' >> /root/archive.sh
-chmod +x /root/archive.sh
-(crontab -l 2>/dev/null; echo "0 * * * * /root/archive.sh") | crontab -
+#echo '#!/bin/sh' >  /root/archive.sh
+#echo 'tar -rczf /root/logs/screenshots/screenshot_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/screenshots/*.png && rm -rf /root/logs/screenshots/*.png' >> /root/archive.sh
+#echo 'tar -czf /root/logs/script/script_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/script/*.log && rm -rf /root/logs/script/*.log' >> /root/archive.sh
+#chmod +x /root/archive.sh
+#(crontab -l 2>/dev/null; echo "0 * * * * /root/archive.sh") | crontab -
 echo -e "\n\n[*] Installing offline service for the BinaryExile Wiki at http://127.0.0.1:4000\n\n"
 gem install bundler 2>> /root/errorlog.txt 1>> /root/log.txt
 mkdir /root/BinaryExileWiki 2>> /root/errorlog.txt 1>> /root/log.txt && cd /root/BinaryExileWiki 2>> /root/errorlog.txt 1>> /root/log.txt

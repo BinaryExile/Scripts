@@ -22,6 +22,8 @@ sudo apt-get install openvas
 sudo apt-get install scrot
 touch /usr/local/bin/screen.sh
 chmod 777 /usr/local/bin/screen.sh
+echo '#!/bin/bash' >  /usr/local/bin/screen.sh
+echo "while true; do scrot -d 60 '%Y-%m-%d-%H:%M:%S.png' -q 20 -e 'mv $f /root/logs/screenshots/'; done" > /usr/local/bin/screen.sh
 #echo '#!/bin/sh' >  /root/archive.sh
 #echo 'tar -rczf /root/logs/screenshots/screenshot_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/screenshots/*.png && rm -rf /root/logs/screenshots/*.png' >> /root/archive.sh
 #echo 'tar -czf /root/logs/script/script_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/script/*.log && rm -rf /root/logs/script/*.log' >> /root/archive.sh

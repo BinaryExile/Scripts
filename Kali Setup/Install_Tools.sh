@@ -23,7 +23,7 @@ sudo apt-get install scrot
 touch /usr/local/bin/screen.sh
 chmod 777 /usr/local/bin/screen.sh
 echo '#!/bin/bash' >  /usr/local/bin/screen.sh
-echo "while true; do scrot -d 60 '%Y-%m-%d-%H:%M:%S.png' -q 20 -e 'mv $f /root/logs/screenshots/'; done" > /usr/local/bin/screen.sh
+echo "while true; do scrot -d 60 /root/logs/screenshots/'%Y-%m-%d-%H:%M:%S.png' -q 20; done" > /usr/local/bin/screen.sh
 #echo '#!/bin/sh' >  /root/archive.sh
 #echo 'tar -rczf /root/logs/screenshots/screenshot_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/screenshots/*.png && rm -rf /root/logs/screenshots/*.png' >> /root/archive.sh
 #echo 'tar -czf /root/logs/script/script_backup_`date +%Y%m%d%H%M%S`.tar.gz /root/logs/script/*.log && rm -rf /root/logs/script/*.log' >> /root/archive.sh
@@ -170,7 +170,7 @@ echo -e "\n\n[*] Installing Firefox Developer Edition - Launch with firefox-dev 
 tar xf firefox.tar.bz2
 mv firefox/ /usr/lib/firefox-dev
 ln -s /usr/lib/firefox-dev/firefox /usr/bin/firefox-dev
-https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/firefox-dev.desktop
+wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/firefox-dev.desktop
 mv firefox-dev.desktop /usr/share/applications/firefox-dev.desktop
 wget https://raw.githubusercontent.com/BinaryExile/Scripts/master/Kali%20Setup/screenshot.desktop
 mkdir -p /root/.config/autostart/

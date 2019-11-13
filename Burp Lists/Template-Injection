@@ -1,0 +1,10 @@
+ ${8*8}
+ {{8*'8'}}
+ {{8*8}}
+ WSX{*comment*}edc
+ <%= 8 * 8 %>
+ {php}echo `id`;{/php}
+ #{8*8}
+ {{ wsxedc.toUPPERCASE() }}
+ {{'wsxedc'.toUpperCase()}}
+ {{4*4}}[[5*5]]

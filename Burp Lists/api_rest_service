@@ -1,0 +1,14 @@
+/swagger/
+/swagger
+/api-docs/v1/openapi.json
+/openapi.json
+/application.wadl
+/wsdl
+/?_wadl
+?_wadl
+/application.xml
+?wsdl
+/?wsdl
+/cxf-servlet.xml
+/swagger.json
+/swagger.yaml

@@ -12,6 +12,7 @@ Flow
 HTTP Request Smuggler
 J2EEScan
 Java Deserialization Scanner
+JS Link Finder
 JSON Beautifier
 JSON Web Tokens
 Meth0dMan
@@ -22,6 +23,7 @@ Retire.js
 Same Origin Method Execution
 SAML Raider
 Software Version Reporter
+Software Vulnerability Scanner
 UUID Detector
 WAF Detector
 Wsdler

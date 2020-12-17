@@ -90,3 +90,4 @@ pg_sleep(15)--
 1)) or pg_sleep(15)--
 ")) or pg_sleep(15)--
 ')) or pg_sleep(15)--
+1; SELECT pg_sleep(10);

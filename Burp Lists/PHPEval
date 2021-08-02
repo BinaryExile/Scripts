@@ -1,0 +1,4 @@
+a";phpinfo();"
+1;phpinfo();
+a";system('dir');"
+1;system('dir');

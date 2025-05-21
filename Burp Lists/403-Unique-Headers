@@ -1,0 +1,21 @@
+Connection: close
+Connection: X-Bar
+Connection: X-Foo
+Content-Length:0
+Connection: Close, Accept
+Connection: Close, Accept-Application
+Connection: Close, Accept-Charset
+Connection: Close, Accepted
+Connection: Close, Accept-Encoding
+Connection: Close, Accept-Encodxng
+Connection: Close, Accept-Language
+Connection: Close, Accept-Ranges
+Connection: Close, Accept-Version
+Connection: Close, Access-Control-Allow-Credentials
+Connection: Close, Access-Control-Allow-Headers
+Connection: Close, Access-Control-Allow-Methods
+Connection: Close, Access-Control-Allow-Origin
+Connection: Close, Access-Control-Expose-Headers
+X-Forwarded-Port: 443
+X-Forwarded-Port: 8080
+X-Forwarded-Port: 454

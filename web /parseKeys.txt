@@ -1,0 +1,1 @@
+Select-String -Path .\loot.txt -Pattern "A[SK]IA[0-9A-Z]{16}" -Context 5

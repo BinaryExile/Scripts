@@ -1,1 +1,3 @@
 Select-String -Path .\loot.txt -Pattern "A[SK]IA[0-9A-Z]{16}" -Context 5 | ForEach-Object { $_.Matches.Value }
+.\strings64.exe -accepteula -n 10 .\heapdump_verified.hprof | Select-String -Pattern "A[SK]IA[A-Z0-9]{16}" -Context 5
+.\strings64.exe -accepteula -n 10 .\heapdump_verified.hprof | Select-String -Pattern "[A-Za-z0-9/+=]{40}"
